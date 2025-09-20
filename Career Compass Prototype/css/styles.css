@@ -1,0 +1,207 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+/* NAVBAR */
+
+.navbar-brand,.nav-link{
+color: white !important;
+font-weight: bold;
+}
+.navbar-toggler{
+background-color: white !important;
+}
+.navbar {
+  background-color: #C65BCF; /* Primary color */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover {
+  color: #F27BBD; /* Light accent color */
+}
+.navbar-expand-lg .navbar-collapse {
+justify-content: flex-end;
+}
+/* HOME */
+#home {
+  background-color: #874CCC;
+  color: #fff;
+}
+
+#home button {
+  background-color: #C65BCF; /* Tertiary color */
+  border-color: #C65BCF;
+  color: #fff;
+}
+
+#home button:hover {
+  background-color: #F27BBD; /* Light accent color */
+  border-color: #F27BBD;
+}
+.home-img{
+  height: 70vh;
+  /* background-color: #104E8B;  */
+
+}
+/* FOR ALL OTHER SECTIONS */
+
+#benefits h2,
+#features h2,
+#about h2,
+#feedback h2,
+#contact h2 {
+  color: #10439F; /* Primary color */
+  font-weight: 700;
+}
+
+#benefits p,
+#features p,
+#about p,
+#feedback p,
+#contact p {
+  color: #333;
+}
+
+
+#about img {
+  border: 3px solid #C65BCF; /* Tertiary color */
+  padding: 10px;
+}
+
+/* ICONS */
+.icon{
+  height: 10vh;
+}
+
+/* FEATURES */
+.features-icon{
+  height: 25vh;
+}
+
+/* Feedback Section Styles */
+#feedback h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+#feedback p {
+  font-size: 1.1rem;
+}
+
+/* Carousel Image Styling */
+#feedbackCarousel .carousel-item img {
+  width: 150px; /* Fixed width for circular images */
+  height: 150px; /* Fixed height for circular images */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #feedbackCarousel .carousel-item .col-md-4 {
+    margin-bottom: 20px; /* Add margin below for small screens */
+  }
+
+}
+
+
+/* CONTACT SECTION*/
+
+
+/* Image Styling */
+#contact img {
+  height: 60vh;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Social Media Icon Styling */
+#contact .social-icons a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+#contact .social-icons a:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+#contact .social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap; /* Adjust icons to wrap on smaller screens */
+  margin-top: 10px;
+}
+
+/* Form Field Styling */
+#contact .form-control {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+#contact .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button Styling */
+#contact form .btn-primary {
+  background-color: #C65BCF;
+  border-color: #C65BCF;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#contact form .btn-primary:hover {
+  background-color: #F27BBD;
+  border-color: #F27BBD;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #contact {
+    text-align: center;
+  }
+
+  #contact .row {
+    flex-direction: column; /* Stack columns on small screens */
+  }
+
+  #contact img {
+    margin-bottom: 20px;
+  }
+
+  #contact .social-icons {
+    margin-top: 15px;
+  }
+}
+
+
+
+/* FOOTER */
+footer {
+  background-color: #10439F; /* Primary color */
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+

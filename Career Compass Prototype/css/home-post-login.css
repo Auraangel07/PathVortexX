@@ -1,0 +1,56 @@
+/* Dropdown Menu Styling */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.95); /* Light transparent background for a sleek look */
+  border: 1px solid #e0e0e0; /* Subtle border color */
+  border-radius: 8px; /* Slightly rounded corners for modern feel */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* Softer shadow for a more refined depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  color: #333333; /* Dark gray text for readability */
+  font-weight: 500; /* Slightly bold text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition */
+}
+
+/* Dropdown Item Hover Effect */
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #5c3c92; /* Elegant purple hover effect */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.05); /* Slight scale effect for interactivity */
+}
+
+/* Dropdown Toggle Button Styling */
+.navbar-nav .nav-item.dropdown .dropdown-toggle {
+  color: #333333; /* Default dark gray for the toggle text */
+  font-weight: 600; /* Slightly bolder for visibility */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-toggle:focus {
+  box-shadow: none; /* Remove focus outline */
+}
+
+/* Responsive Navbar */
+@media (max-width: 767.98px) {
+  .navbar-nav .dropdown-menu {
+    position: static; /* Position dropdown menu normally on small screens */
+    float: none; /* Remove float */
+    margin-top: 0; /* Remove margin on top */
+    border: 0; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+  }
+
+  .navbar-nav .nav-item.dropdown .dropdown-toggle {
+    color: #5c3c92; /* Elegant purple for the toggle text on small screens */
+  }
+
+  .navbar-nav .nav-item.dropdown .dropdown-toggle:hover {
+    color: #4a2d71; /* Darker purple on hover */
+  }
+}
+

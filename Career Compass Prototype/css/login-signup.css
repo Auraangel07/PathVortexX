@@ -1,0 +1,164 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f09db3, #8c03e1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Gradient Animation for Background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container Styles */
+.container {
+    background: rgba(232, 194, 209, 0.994); /* Semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+    backdrop-filter: blur(8px); /* Creates a frosted glass effect */
+    animation: slideUp 1s ease-out;
+}
+
+/* Container hover animation */
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Form Styles */
+.form {
+    width: 100%;
+}
+
+h2 {
+    color: #9811ec;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2em;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #c0086d;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #750149;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #c641ca;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #fac0fd;
+    background-color: rgba(212, 183, 223, 0.793);
+    box-shadow: 0 0 8px rgba(171, 141, 183, 0.507);
+    outline: none;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #bc57ff;
+    color: #000;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #aa00b6;
+    transform: translateY(-3px);
+}
+
+/* Switch Form Link Styles */
+.switch-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch-form a {
+    color: #00d2ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.switch-form a:hover {
+    color: #00aaff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .btn-primary {
+        padding: 12px;
+    }
+}
+
+

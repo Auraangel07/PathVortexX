@@ -1,0 +1,168 @@
+/* Common styles for economic insight */
+.economic-insights-container {
+    padding: 30px;
+    background-color: #f4f4f4; /* Light gray background for a soft feel */
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.insight-item {
+    flex: 1 1 calc(33.333% - 30px);
+    padding: 40px;
+    background-color: #ffffff; /* Clean white background for content */
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); /* Light shadow for modern touch */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #e0e0e0; /* Subtle border to distinguish items */
+}
+
+.insight-item:hover {
+    transform: translateY(-12px); /* Slight upward movement for hover effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+}
+
+.insight-item-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5d3e6e; /* Elegant dark purple for titles */
+    margin-bottom: 15px;
+}
+
+.insight-item-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.subcategory {
+    cursor: pointer;
+    padding-left: 14px; /* Soft indentation for subcategories */
+    font-weight: 500;
+    color: #7f5fa6; /* Elegant muted purple */
+    transition: color 0.3s ease;
+}
+.subcategory:hover {
+    color: #5c3c8c; /* Darker purple on hover */
+}
+.nested-container {
+    margin-left: 24px; /* Further indentation for nested levels */
+}
+  /* Button Styles */
+.back-button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #6b3b94; /* Deep purple button for contrast */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+}
+.back-button:hover {
+    background-color: #4a2d71; /* Darker purple on hover */
+    transform: scale(1.08); /* Slight scale effect for emphasis */
+}
+
+  /* Economic Insight Banner */
+.economic-banner {
+    padding: 40px;
+    background: linear-gradient(135deg, #5d3e6e, #2a4c7e); /* Elegant gradient for banner */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.economic-banner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.economic-banner p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.economic-banner .cta-button {
+    padding: 12px 25px;
+    background-color: #2575fc; /* Soft blue call-to-action button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+}
+.economic-banner .cta-button:hover {
+    background-color: #10439f; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect for emphasis */
+}
+  /* Economic Insights List */
+.insight-list-container {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+.insight-list-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #5d3e6e;
+    margin-bottom: 15px;
+}
+.insight-item-list {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.insight-item-list li {
+    font-size: 1.1rem;
+    color: #555;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+.insight-item-list li:last-child {
+    border-bottom: none;
+}
+
+.insight-item-list li:hover {
+    background-color: #f0f0f0; /* Light hover effect */
+}
+
+  /* Responsive Design */
+@media (max-width: 1024px) {
+    .insight-item {
+      flex: 1 1 calc(50% - 30px); /* Two items per row on medium screens */
+    }
+
+    .economic-banner h1 {
+    font-size: 2rem;
+    }
+
+    .economic-insights-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+    padding: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .insight-item {
+      flex: 1 1 100%; /* Full-width items on small screens */
+    }
+
+    .economic-banner h1 {
+    font-size: 1.6rem;
+    }
+
+    .economic-banner p {
+    font-size: 1rem;
+    }
+
+    .back-button {
+    width: 100%;
+    }
+}

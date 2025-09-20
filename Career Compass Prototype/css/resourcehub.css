@@ -1,0 +1,62 @@
+/* Common styles for resource hub */
+.resource-items-container {
+  padding: 20px;
+  background-color: #f7f7f7; /* Soft gray background */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow for subtle depth */
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resource-item {
+  flex: 1 1 calc(33.333% - 20px);
+  padding: 35px;
+  background-color: #ffffff; /* Crisp white background */
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for modern touch */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid #e1e1e1; /* Subtle border for distinction */
+}
+
+.resource-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Enhanced hover shadow */
+}
+
+.subcategory {
+  cursor: pointer;
+  padding-left: 12px; /* Soft indentation for subcategories */
+  font-weight: 500;
+  color: #7f5fa6; /* Elegant muted purple */
+  transition: color 0.3s ease;
+}
+
+.subcategory:hover {
+  color: #5c3c8c; /* Slightly darker purple for hover effect */
+}
+
+.nested-container {
+  margin-left: 20px; /* Further indentation for nested levels */
+}
+
+.back-button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #6b3b94; /* Deep purple for elegant contrast */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #4a2d71; /* Darker purple on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+  
